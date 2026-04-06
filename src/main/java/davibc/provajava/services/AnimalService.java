@@ -19,7 +19,7 @@ public class AnimalService {
     }
 
     public Animal BuscarPorId(Integer id){
-        return animalRepository.findById(id).orElse(null);
+        return animalRepository.findById(id).get();
     }
 
     public void Adicionar(Animal animal){
